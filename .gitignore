@@ -4,4 +4,4 @@
 *.aux
 *.bib
 !figury/*.pdf
-
+!sprawozdanie-1.pdf
