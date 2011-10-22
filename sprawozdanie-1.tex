@@ -117,5 +117,35 @@ Layout na \f{<div>} jest łatwiejszy w~tworzeniu i~utrzymaniu. Zmiany przeważni
 wprowadza się tylko w~stylach, kod dokumentu jest przejrzysty i~semantycznie
 poprawny.
 
+\section{Uwagi}
+Wszystkie strony wymagają włączonej obsługi \f{JavaScript}. Wszystkie są zgodne
+ze standardami \f{HTML~4.01~Strict} lub \f{XHTML~1.0~Strict}, ich style
+z~\f{CSS~2.1}.
+
+Strony zostały przetestowane w~\f{Firefox 7.0.1}, \f{Safari 5.1.1} i \f{Chrome
+15.0}.
+
+\subsection{Elementy \f{HTML}}
+Strona zawierająca demonstracyjne wykorzystanie elementów \f{HTML} jest
+niezgodna ze standardem ze swojej deklaracji \f{DOCTYPE}. Zawiera elementy
+przedstawione na wykładzie, nie wchodzące w~skład specyfikacji \f{XHTML 1.0
+Strict}.
+
+\subsection{Porównanie języków}
+Strony wyglądają identycznie. W~\f{Operze 11.52} margines dolny tabeli jest
+traktowany niż w~silnikach \f{Gecko} lub \f{Webkit} i~jest doliczany do odstępu
+marginesu górnego elementu \f{<h2>} walidacji. Stąd drobna różnica w~odstępie.
+
+\subsection{Wyświetlanie źródła strony}
+Wyświetlanie źródła strony jest oparte na \f{JavaScript}. Kod wstawiający źródło
+na stronę jest umieszczony w~pliku
+\f{\href{https://github.com/student-tomasz/pi-laboratoria/blob/master/js/insert-source.js}{../js/insert-source.js}}
+w~stosunku do indexu projektu.
+
+Gdy strona zostanie wczytana i~\f{DOM} załadowany, wysyłane jest żądanie po plik
+aktualnie przeglądany. Jego zawartość jest wstawiania na koniec dokumentu
+w~elemencie \f{<pre>} i~wywoływana jest funkcja biblioteczna kolorująca
+składnię.
+
 \end{document}
 
