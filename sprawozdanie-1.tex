@@ -82,5 +82,40 @@ Pochodzą one z~biblioteki \f{\href{http://yuilibrary.com/}{YUI 3}}. Są to plik
 \f{\href{https://github.com/student-tomasz/pi-laboratoria/tree/master/css}{../css/}}
 w~stosunku do katalogu zawierającego projekt z~ćwiczenia.
 
+\section{Wnioski}
+\subsection{Elementy \f{HTML}}
+Język \f{HTML} pozwala na tworzenie rozbudowanych dokumentów, które przy
+stosowaniu się do standardów \f{W3C} oferują identyczne doświadczenie
+użytkownikowi niezależnie od jego urządzenia i~systemu operacyjnego.
+
+Ponieważ dostęp do Internetu jest powszechny i~nowoczesne przeglądarki wspierają
+standardy \f{W3C}, jest to wygodna platforma do tworzenia aplikacji.
+
+\subsection{Porównanie języków}
+Język \f{XHTML} powstał by znormalizować \f{HTML} na tyle by parsery \f{XML}
+mogły swobodnie przetwarzać dokumenty. Nie rozszerza jego funkcjonalności
+w~znaczy sposób, wymusza precyzyjną składnię i~rozdziela warstwę prezentacji
+od danych~--- tj. usuwa atrybuty i~tagi z~\f{HTML}, które odpowiadają za wygląd
+a~nie zawierają treści.
+
+\subsection{Budowa dokumentów oparta o~elementy \f{<div>} i~\f{<table>}}
+Tworzenie strony, której layout jest stworzony na bazie \f{<table>} wymaga
+więcej czasu i~kodu niż stworzenie identycznego wyglądu na bazie \f{<div>}.
+Strony porównań są identyczne względem ich wyglądu. Strony z~tabelami zawierają
+około $40\%$ linii niż ich odpowiedniki z~\f{<div>}.
+
+Ustawianie elementów strony za pomocą tabel jest zupełnie nie semantyczne,
+bezpośrednio wymusza ich pozycję w~dokumencie \f{HTML}. Funkcjonalność ta jest
+spełniana stylami \f{CSS}. W~efekcie nadmiarowa ilość znaczników zamykających
+komórki i~wiersze tabel dodatkowo zmniejsza czytelność kodu i~powoduje raka
+płuc. \emph{Tabele służą tylko do prezentowania zestawu danych.}
+
+Technika tworzenia stron w~oparciu o~tabele była popularna kiedy obowiązujące
+standardy \f{HTML} i~\f{CSS} nie dawały innych możliwości. To było w~1996 roku.
+
+Layout na \f{<div>} jest łatwiejszy w~tworzeniu i~utrzymaniu. Zmiany przeważnie
+wprowadza się tylko w~stylach, kod dokumentu jest przejrzysty i~semantycznie
+poprawny.
+
 \end{document}
 
