@@ -84,6 +84,23 @@ Pochodzą one z~biblioteki \f{\href{http://yuilibrary.com/}{YUI 3}}. Są to plik
 \f{\href{https://github.com/student-tomasz/pi-laboratoria/tree/master/css}{../css/}}
 w~stosunku do katalogu zawierającego projekt z~ćwiczenia.
 
+\subsection{Budowa dokumentów oparta o~elementy \f{<div>} i~\f{<table>}}
+Strony miały zachowują się i~wyglądają identycznie, niezależnie od przyjętej
+metody pozycjonowanie elementów. Ewentualne różnice wynikają z~różnic
+w~implementacji standardów przez przeglądarki i~są opisane w~paragrafie
+\ref{sec:uwagi_budowa}. Ogólny projekt zakłada:
+\begin{itemize}
+  \item nagłówek,
+  \item treść:
+  \begin{itemize}
+    \item z~nawigacją po lewej stronie, zajmującej około $30\%$ szerokości
+      rodzica,
+    \item i~porównaniem po prawej stronie, zajmującym resztę wolnej szerokości,
+  \end{itemize}
+  \item stopkę,
+  \item źródła.
+\end{itemize}
+
 
 
 \section{Wnioski}
@@ -137,7 +154,8 @@ niezgodna ze standardem ze swojej deklaracji \f{DOCTYPE}. Zawiera elementy
 przedstawione na wykładzie, nie wchodzące w~skład specyfikacji \f{XHTML 1.0
 Strict}.
 
-\subsection{Porównanie języków}
+\subsection{Budowa dokumentów oparta o~elementy \f{<div>} i~\f{<table>}}
+\label{sec:uwagi_budowa}
 Strony wyglądają identycznie. W~\f{Operze 11.52} margines dolny tabeli jest
 traktowany niż w~silnikach \f{Gecko} lub \f{Webkit} i~jest doliczany do odstępu
 marginesu górnego elementu \f{<h2>} walidacji. Stąd drobna różnica w~odstępie.
