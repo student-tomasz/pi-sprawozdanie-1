@@ -148,9 +148,15 @@ na stronę jest umieszczony w~pliku
 \f{\href{https://github.com/student-tomasz/pi-laboratoria/blob/master/js/insert-source.js}{../js/insert-source.js}}
 w~stosunku do indexu projektu.
 
-Gdy strona zostanie wczytana i~\f{DOM} załadowany, wysyłane jest żądanie po plik
-aktualnie przeglądany. Jego zawartość jest wstawiania na koniec dokumentu
-w~elemencie \f{<pre>} i~wywoływana jest funkcja biblioteczna kolorująca
-składnię.
+Gdy strona zostanie wczytana i~\f{DOM} załadowany, wysyłane są żądania po pliki
+źródłowe wykorzystywane na aktualnie przeglądanej stronie. Najpierw zbierane są
+ścieżki do plików podlinkowanych na stronie, oraz ścieżka samej strony.
+Następnie wysyłane jest żądanie po każdy z~tych plików, którego odpowiedź
+interpretowana jest jako zwykły tekst.
+
+Żądania są wysyłane synchronicznie, może się zdarzyć, że przedłuży to znacznie
+czas ładowania strony. Nowoczesne przeglądarki zachowują załadowane zasoby
+w~pamięci podręcznej, z~której powinny być wczytywane odpowiedzi na następne
+zapytania.
 
 \end{document}
